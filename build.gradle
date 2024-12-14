@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.youable'
-version = '0.0.2'
+version = '0.1.0'
 
 java {
 	toolchain {
@@ -38,7 +38,7 @@ publishing {
 		maven (MavenPublication) {
 			groupId = 'com.youable.safehttp'
 			artifactId = 'spring-safe-http'
-			version = '0.0.2'
+			version = '0.1.0'
 
 			from components.java
 		}
