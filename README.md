@@ -35,3 +35,6 @@ Spring Boot 웹 서버 애플리케이션의 HTTP 바디 데이터를 암호화�
 	    <version>Tag</version>
 	</dependency>
 ```
+
+## LICENSE
+spring-safe-http 라이브러리의 LICENSE는 [LICENSE](https://github.com/youabledev/spring-safe-http/blob/main/LICENSE)를 확인하세요
