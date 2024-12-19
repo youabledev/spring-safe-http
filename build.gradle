@@ -10,7 +10,7 @@ java {
 }
 
 group = 'com.youable'
-version = '0.1.4'
+version = '0.2.0'
 
 repositories {
 	mavenCentral()
@@ -28,6 +28,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-aop'
 	implementation 'org.aspectj:aspectjweaver:1.9.22.1'
 	testImplementation 'org.junit.jupiter:junit-jupiter:5.11.3'
+	testImplementation 'org.mockito:mockito-core:4.8.0'
 }
 
 publishing {
@@ -42,4 +43,8 @@ publishing {
 			url = uri("https://jitpack.io")
 		}
 	}
+}
+
+tasks.test {
+	useJUnitPlatform() // Ensure JUnit 5 is used for tests
 }
