@@ -4,13 +4,13 @@ package com.youable.safehttp.cipher;
  * <p>use the httpCipher interface to implement the encryption/decryption algorithm.
  * The object you implement must be registered as a bean.
  * <pre>{@code
- *  @Configuration
- *  public class CipherConfig {
- *      @Bean
- *      public HttpCipher aesCipher() {
- *          return new AESCipher.AESCipherBuilder().setPRIVATE_KEY("3mlng8uGI+k2CGVDKR/EAwI+uN5pzoITSkREjzxZc7M=").build();
- *      }
- *  }
+ * @Configuration
+ * public class CipherConfig {
+ *     @Bean
+ *     @Primary
+ *     public HttpCipher aesCipher() {
+ *         return new AESCipher.AESCipherBuilder("3mlng8uGI+k2CGVDKR/EAwI+uN5pzoITSkREjzxZc7M=").build();
+ *     }
  * }</pre>
  * <p>Create Configuration to enroll HttpCipher</p>
  * @author youabledev
